@@ -231,6 +231,7 @@ button {
     position: absolute;
     top: 55%;
     left: 10px;
+    fill: currentColor;
 }
 
 .modal-form-label:hover .modal-form-icon,
@@ -238,7 +239,9 @@ button {
     fill: var(--logo-and-hover-color);
 }
 
-
+label:focus-within svg {
+    fill: var(--logo-and-hover-color);
+}
 
 .modal-form-label {
     display: flex;
@@ -571,7 +574,7 @@ button {
 }
 
 .page-footer .container {
-    gap: 71px;
+    gap: 60px;
 }
 
 .footer-social-icons {
@@ -626,6 +629,70 @@ button {
     color: var(--logo-and-hover-color);
 }
 
+.footer-form {
+    flex-grow: 1;
+}
+
+.footer-form h4 {
+    font-size: 14px;
+    color: var(--white-color);
+}
+
+.footer-submit-form {
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 1.87;
+    background-color: var(--button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    min-width: 170px;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-label {
+    display: inline-flex;
+    gap: 9px;
+    margin-top: 20px;
+}
+
+.email-label input{
+    min-width: 268px;
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    border-color: transparent;
+    background-color: var(--hero-bg);
+    color: var(--white-color);
+    padding: 15px;
+}
+
+.email-label input::placeholder {
+    font-size: 16px;    
+}
+
+.email-label input:hover,
+.email-label input:focus {
+    border-color: var(--button-color);
+}
+
+.footer-submit-form:hover,
+.footer-submit-form:focus {
+    background-color: var(--logo-and-hover-color);
+    cursor: pointer;
+}
+
+.footer-send-icon {
+    height: 18px;
+    width: 18px;
+    fill: currentColor;
+    margin-left: 19px;
+}
+
+
 /*    ------- portofolio style --------- */
 /* styling filter buttons */
 
@@ -672,7 +739,7 @@ button {
 .portofolio-card {
     background-color: var(--white-color);
     border: 1px solid #EEEEEE;
-    width: 280px;
+    flex: 1 0 280px;
 }
 
 .portofolio-card:hover,
