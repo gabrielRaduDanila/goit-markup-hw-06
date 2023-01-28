@@ -263,7 +263,6 @@ label:focus-within svg {
 
 .modal-form-label input:hover,
 .modal-form-label input:focus {
-    cursor: pointer;
     border: none;
     outline: 1px solid var(--logo-and-hover-color);
 }
@@ -291,7 +290,8 @@ label:focus-within svg {
 
 .checkbox-label:hover .checkbox-input,
 .checkbox-label:focus .checkbox-input{
-    outline: none;    
+    outline: none;
+    cursor: pointer;    
 }
 
 .checkbox-label {
