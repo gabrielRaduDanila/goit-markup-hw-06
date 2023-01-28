@@ -292,6 +292,12 @@ label:focus-within svg {
 .checkbox-label:hover .checkbox-input,
 .checkbox-label:focus .checkbox-input{
     outline: none;    
+    border: none;
+}
+
+.checkbox-label:focus-within .checkbox-input {
+    border: none;
+    outline: none;
 }
 
 .checkbox-label {
