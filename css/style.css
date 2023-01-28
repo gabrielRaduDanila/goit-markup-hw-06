@@ -237,10 +237,8 @@ button {
 .modal-form-label:focus .modal-form-icon {
     fill: var(--logo-and-hover-color);
 }
-input:focus .modal-form-icon {
-    fill: var(--logo-and-hover-color);
 
-}
+
 
 .modal-form-label {
     display: flex;
@@ -288,14 +286,9 @@ input:focus .modal-form-icon {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox-input {
-    width: 12px;
-}
-
 .checkbox-label:hover .checkbox-input,
 .checkbox-label:focus .checkbox-input{
-    outline: none;
-    
+    outline: none;    
 }
 
 .checkbox-label {
