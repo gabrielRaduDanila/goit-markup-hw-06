@@ -288,14 +288,6 @@ label:focus-within svg {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox-label:hover .checkbox-input,
-.checkbox-label:focus .checkbox-input{
-    outline: none;
-}
-
-.checkbox-label:focus-within .checkbox-input {
-    outline: none;
-}
 
 .checkbox-label {
     flex-direction: row;
@@ -303,14 +295,43 @@ label:focus-within svg {
     justify-content: center;
 }
 
-.checkbox-label span {
+.terms-span {
     color: var(--logo-and-hover-color);
     text-decoration: underline;
 }
 
-.checkbox-label span:hover {
+.terms-span:hover,
+.checkbox-replacer:hover {
     cursor: pointer;
 }
+
+.checkbox-replacer {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--links-color);
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+
+input[type="checkbox"] {
+    display: none;
+  }
+
+input[type="checkbox"]:checked+.checkbox-replacer {
+    border-color: #2196F3;
+    background-color: #2196F3;
+  }
+
+.checkbox-replacer-icon {
+    width: 11px;
+    height: 8px;
+    opacity: 0;
+    transition: opacity var(--transition-duration) var(--transition-timing);
+}  
+
+input[type="checkbox"]:checked+.checkbox-replacer  .checkbox-replacer-icon{
+    opacity: 1;
+  }
 
 .modal-form button {
     background-color: var(--button-color);
@@ -662,7 +683,7 @@ label:focus-within svg {
     margin-top: 20px;
 }
 
-.email-label input{
+.email-label input {
     min-width: 268px;
     outline: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -674,7 +695,7 @@ label:focus-within svg {
 }
 
 .email-label input::placeholder {
-    font-size: 16px;    
+    font-size: 16px;
 }
 
 .email-label input:hover,
